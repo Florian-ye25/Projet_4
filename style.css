@@ -103,9 +103,9 @@ a:hover {
     color: rgba(255, 255, 255, .7);
 }
 
-.d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
-}
+    .d-bloc button:hover {
+        color: rgba(255, 255, 255, .9);
+    }
 
 .d-bloc .icon-round,
 .d-bloc .icon-square,
@@ -139,7 +139,6 @@ a:hover {
 .d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
 .d-bloc a:hover .icon-sm,
-.d-bloc a:hover .icon-md,
 .d-bloc a:hover .icon-lg,
 .d-bloc a:hover .icon-xl,
 .d-bloc h1 a:hover,
@@ -152,9 +151,14 @@ a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.d-bloc .navbar-toggle .icon-bar {
-    background: rgba(255, 255, 255, 1);
+.d-bloc a:hover .icon-md {
+    color: black;
 }
+
+
+    .d-bloc .navbar-toggle .icon-bar {
+        background: rgba(255, 255, 255, 1);
+    }
 
 .d-bloc .btn-wire,
 .d-bloc .btn-wire:hover {
@@ -650,7 +654,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #212121!important;
 }
 
 .container {
@@ -699,7 +703,6 @@ p {
 }
 
 .social {
-    max-width: 400px;
     margin: auto auto auto auto;
 }
 
@@ -734,8 +737,8 @@ h4 {
     margin-top: 24px;
 }
 
-.white {
-    color: #424242!important;
+.black {
+    color: #212121!important;
 }
 
 .portfolio-thumb {
@@ -752,7 +755,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(72, 62, 50, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -822,6 +825,18 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
+}
+
+.white {
+    color: #ffffff!important;
+}
+
+.col-sm-12 p {
+    font-size: 16px;
+}
+
+a:focus, a:active {
+    color: green;
 }
 
 @media (max-width: 1024px) {
