@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="Default">
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<meta name="keywords" content="">
@@ -7,13 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 
 	<title> Contact - La Chouette Agence </title>
 	<!-- Analytics -->
@@ -27,38 +24,36 @@
 		<!-- bloc-0 -->
 		<header class="bloc bgc-white l-bloc " id="bloc-0">
 			<div class="container bloc-sm">
-				<div class="row">
-					<nav class="col navbar navbar-expand">
-						<div class="navbar-header">
-							<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="atlanta web design logo" height="40" /></a>
-							<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-								<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-							</button>
-						</div>
-						<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-							<ul class="site-navigation nav navbar-nav">
-								<li class="nav-item active">
-									<a class="nav-link" href="index.html">Accueil</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
+				<nav class="row navbar">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="atlanta web design logo" height="40" /></a>
+						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+						<ul class="site-navigation nav navbar-nav">
+							<li>
+								<a href="index.html">Accueil</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
 			</div>
 		</header>
 		<!-- bloc-0 END -->
 		<!-- bloc-6 -->
-		<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+		<section class="hero bloc bg-banniere bg-repeat bgc-dark-slate-blue  d-bloc bloc-bg-texture texture-paper" id="bloc-6">
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-12">
 						<h1 class="text-center hero-bloc-text tc-white">
 							Parlons web design !
 						</h1>
-						<p class="text-center mg-lg tc-white tight-width-whitespace">
+						<h2 class="h2 text-center mg-lg tc-white tight-width-whitespace">
 							Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 							Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-						</p>
+						</h2>
 					</div>
 				</div>
 			</div>
@@ -66,10 +61,10 @@
 		<!-- bloc-6 END -->
 		<!-- bloc-7 -->
 		<section class="bloc bgc-white l-bloc" id="bloc-7">
-			<div class="formulaire bgc-white">
-				<div class="container-fluid">
-					<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-						<div class="row form-group">
+			<div class="container formulaire bgc-white">
+				<form id="form_1">
+					<div class="form-group">
+						<div class="row">
 							<div class="col-md-6">
 								<label for="prenom">Prénom</label>
 								<input type="text" class="form-control" placeholder="Jeanne">
@@ -79,22 +74,21 @@
 								<input type="text" class="form-control" placeholder="Desmoulins">
 							</div>
 						</div>
-						<div class="row form-group">
+					</div>
+					<div class="form-group">
+						<div class="row">
 							<div class="col-md-6">
-								<label for="mail">Mail</label>
-								<div class="input-group">
-									<div class="input-group-prepend">
-										<div class="input-group-text">@</div>
-									</div>
-									<input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
-								</div>
+								<label for="Mail">Mail</label>
+								<input type="text" class="form-control" placeholder="@example.com" required>
 							</div>
 							<div class="col-md-6">
 								<label for="validationDefault03">Ville</label>
-								<input type="text" class="form-control" id="validationDefault03" placeholder="Ville" required>
+								<input type="text" class="form-control" placeholder="Ville" required>
 							</div>
 						</div>
-						<div class="row form-group">
+					</div>
+					<div class="form-group">
+						<div class="row">
 							<div class="col">
 								<label for="selection">Comment nous avez-vous connu ?</label>
 								<select id="selection" class="form-control">
@@ -105,19 +99,25 @@
 								</select>
 							</div>
 						</div>
-						<div class="row form-group">
+					</div>
+					<div class="form-group">
+						<div class="row">
 							<div class="col">
 								<label for="exampleFormControlTextarea1">Si autre, préciser :</label>
-								<textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Tapez votre texte ici"></textarea>
+								<textarea class="form-control" rows="2" placeholder="Tapez votre texte ici"></textarea>
 							</div>
 						</div>
-						<div class="row form-group">
+					</div>
+					<div class="form-group">
+						<div class="row">
 							<div class="col">
 								<label for="exampleFormControlTextarea1">Brief de votre projet (Ajoutez autant de détail que nécessaire)</label>
-								<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Tapez votre texte ici"></textarea>
+								<textarea class="form-control" rows="5" placeholder="Tapez votre texte ici"></textarea>
 							</div>
 						</div>
-						<div class=”row form-group”>
+					</div>
+					<div class="form-group">
+						<div class="row">
 							<div class="col">
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" id="publicCheck">
@@ -127,11 +127,13 @@
 								</div>
 							</div>
 						</div>
-						<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
-							Envoyer
-						</button>
-					</form>
-					<div class="col-sm-6">
+					</div>
+					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+						Envoyer
+					</button>
+				</form>
+				<div class="row">
+					<div class="col contact">
 						<p>
 							contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
 						</p>
@@ -154,22 +156,22 @@
 						<div class="row row-no-gutters social">
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+									<a class="social" href="twitter.com"><span class="fa fa-twitter icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+									<a class="social" href="facebook.com"><span class="fa fa-facebook icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+									<a class="social" href="dribble.com"><span class="fa fa-dribbble icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+									<a class="social" href="instagram.com"><span class="fa fa-instagram icon-md"></span></a>
 								</div>
 							</div>
 						</div>
@@ -184,9 +186,6 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
 	<script src="./js/jqBootstrapValidation.js"></script>
 	<script src="./js/formHandler.js"></script>
 

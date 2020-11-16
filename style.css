@@ -1086,6 +1086,17 @@ a:focus, a:active {
     padding-bottom: 50px;
 }
 
+#form_1 {
+    padding: 0 50px 0 50px;
+}
+
+.contact {
+    padding: 15px 50px 0 50px;
+}
+
+.h2 {
+    font-size: 18px;
+}
 
 @media (max-width: 400px) {
     .bloc {
