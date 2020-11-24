@@ -943,4 +943,10 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
             d.offset = d.offset || {}, null != d.offsetBottom && (d.offset.bottom = d.offsetBottom), null != d.offsetTop && (d.offset.top = d.offsetTop), b.call(c, d)
         })
     })
+
+    var tabbableElements = 'a[href], area[href], input:not([disabled]),' +
+        'select:not([disabled]), textarea:not([disabled]),' +
+        'button:not([disabled]), iframe, object, embed, *[tabindex],' +
+        '*[contenteditable]';
+
     }(jQuery);
