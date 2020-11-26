@@ -1116,6 +1116,10 @@ a:focus, a:active {
     height: auto;
 }
 
+.fade.in {
+    opacity: 1;
+}
+
     @media (max-width: 400px) {
         .bloc {
             padding-left: 0;
