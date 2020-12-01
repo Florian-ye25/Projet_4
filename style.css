@@ -89,7 +89,7 @@ a:focus {
 }
 
 .bg-t-edge {
-    background: top no-repeat;
+    background: top;
 }
 
 .bloc-bg-texture::before {
@@ -867,12 +867,18 @@ a:focus, a:active {
 
     .navbar-brand {
         margin-left: -5px;
-        margin-right: 0 !important;
+        margin-right: 0!important;
         padding: 0px;
     }
 
-    #bloc-1-hero {
-        font-size: 6vw;
+    #bloc-1-hero h1 {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width: 575px) {
+    #bloc-1-hero h1 {
+        font-size: 5vw;
     }
 }
 
@@ -890,8 +896,8 @@ a:focus, a:active {
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+        padding-left: 10px!important;
+        padding-right: 10px!important;
     }
 
     .b-parallax {
@@ -901,7 +907,7 @@ a:focus, a:active {
     .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none !important;
+        float: none!important;
     }
 
     .navbar.row {
@@ -931,7 +937,7 @@ a:focus, a:active {
 
     .dropdown .dropdown a .caret {
         float: none;
-        margin: 5px 0 0 10px !important;
+        margin: 5px 0 0 10px!important;
         border: 4px solid black;
         border-bottom-color: transparent;
         border-right-color: transparent;
@@ -1053,6 +1059,9 @@ a:focus, a:active {
         align-items: center;
         justify-content: center;
     }
+    #bloc-1-hero h1 {
+        font-size: 4vw;
+    }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
@@ -1105,9 +1114,11 @@ a:focus, a:active {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
+}
 
+@media (min-width: 850px) and (max-width: 1023px) {
     #bloc-1-hero h1 {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 }
 
@@ -1120,9 +1131,17 @@ a:focus, a:active {
             padding-left: 0;
             padding-right: 0;
         }
+}
 
+@media (min-width: 1024px) and (max-width: 1439px) {
     #bloc-1-hero h1 {
-        font-size: 4.7vw;
+        font-size: 2.5vw;
+    }
+} 
+
+@media (min-width: 1440px) {
+    #bloc-1-hero h1 {
+        font-size: 1.5vw;
     }
 }
 
@@ -1186,3 +1205,6 @@ a:focus, a:active {
     font-weight: bold;
 }
 
+.container .cgu {
+    padding: 50px;
+}
