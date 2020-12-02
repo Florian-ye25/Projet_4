@@ -298,10 +298,6 @@ a:focus {
     padding-left: 0;
 }
 
-#bloc-1-hero h1 {
-    font-size: 2.1vw;
-}
-
 .navbar {
     margin-bottom: 0;
     z-index: 1;
@@ -377,13 +373,6 @@ a:focus {
 }
 
 @media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
@@ -876,9 +865,15 @@ a:focus, a:active {
     }
 }
 
-@media (max-width: 575px) {
+@media (min-width: 401px) and (max-width:580px) {
     #bloc-1-hero h1 {
         font-size: 5vw;
+    }
+}
+
+@media (min-width: 581px) and (max-width: 767px) {
+    #bloc-1-hero h1 {
+        font-size: 3.5vw;
     }
 }
 
@@ -1059,15 +1054,18 @@ a:focus, a:active {
         align-items: center;
         justify-content: center;
     }
-    #bloc-1-hero h1 {
-        font-size: 4vw;
-    }
 
     .site-navigation {
         position: inherit;
         transform: none;
         -webkit-transform: none;
         -ms-transform: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 849px) {
+    #bloc-1-hero h1 {
+        font-size: 3vw;
     }
 }
 
@@ -1140,17 +1138,21 @@ a:focus, a:active {
         }
 }
 
+@media (min-width: 992px) {
+    .site-navigation {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translate(0, -50%);
+        -webkit-transform: translateY(-50%);
+    }
+}
+
 @media (min-width: 1024px) and (max-width: 1439px) {
     #bloc-1-hero h1 {
         font-size: 2.5vw;
     }
 } 
-
-@media (min-width: 1440px) {
-    #bloc-1-hero h1 {
-        font-size: 1.5vw;
-    }
-}
 
 /* Dernieres modifications */
 
@@ -1214,4 +1216,8 @@ a:focus, a:active {
 
 .container .cgu {
     padding: 50px;
+}
+
+.card {
+    border: none!important;
 }
