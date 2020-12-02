@@ -377,6 +377,13 @@ a:focus {
 }
 
 @media (min-width: 768px) {
+    .site-navigation {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translate(0, -50%);
+        -webkit-transform: translateY(-50%);
+    }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
@@ -1054,6 +1061,13 @@ a:focus, a:active {
     }
     #bloc-1-hero h1 {
         font-size: 4vw;
+    }
+
+    .site-navigation {
+        position: inherit;
+        transform: none;
+        -webkit-transform: none;
+        -ms-transform: none;
     }
 }
 
